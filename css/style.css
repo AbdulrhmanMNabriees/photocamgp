@@ -1,0 +1,466 @@
+  /*fonts*/
+  @font-face{
+    src: url(../font/LexendDeca-Regular.ttf);
+    font-family: 'Text';
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;   
+}
+i{
+    list-style: none;
+}
+input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none !important;
+}
+body{
+    font-family: 'Text';
+}
+/* Start Page Dashboard */
+.containe-all-page{
+    max-width: 100%;
+    max-height: 100%;
+}
+.top-header nav{
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 0 20px #e0dfde;
+}
+.top-header .div-logo {
+    flex-basis: 10%;
+    padding-left: 20px;
+    cursor: pointer;
+    height: 45px;
+}
+.top-header .div-logo img{
+    width: 70%;
+    height: 100%;
+}
+.top-header .div-item {
+    flex-basis: 90%;
+    display: flex;
+    padding-left: 55px;
+    align-items: center;
+}
+.top-header .input-group{
+    width: 20%;
+    align-items: center;
+    padding-left: 50px;
+}
+.top-header .input-group input{
+    border: none;
+}
+.top-header .nav-info{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+    
+}
+.top-header .nav-info img{
+    width: 50px;
+    border-radius: 50%;
+}
+.top-header .div-ellipsis{
+    font-size: 20px;
+    padding-left: 15px;
+    color: #656565;
+    cursor: pointer;
+}
+.bars-icon {
+    color: #656565;
+}
+.nav-info .bars-icon{
+    display: none;
+}
+.icon-search {
+    color: #656565;
+    cursor: pointer;
+}
+/* menu profile */
+.profile-menu {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #e6e6e6;
+    width: 185px;
+    border-radius: 3px;
+    display: none;
+    z-index: 100;
+}
+.profile-content {
+    max-height: 400px;
+    overflow: auto;
+}
+.profile-content li {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #36434F;
+    padding: 14px;
+    border-bottom: 1px solid #f0efef;
+    cursor: pointer;
+}
+.profile-content li:hover {
+    background-color: #F5F7FF;
+}
+.profile-content .icon{
+    font-size: 20px;
+}
+.profile-content .text{
+    font-size: 17px;
+}
+/* .form-control {
+    border: none;
+} */
+/* End top-header */
+/* Start Mai Page in dashboard */
+.body-wrapper{
+    display: flex;
+    width: 100%;
+    padding-top: 70px;
+    height: 100%;
+}
+.sidebar {
+    flex-basis: 13%;
+    height: 100vh;
+    position: sticky;
+    left: 0%;
+    z-index: 1;
+    top: 70px;
+    flex-shrink: 0;
+    font-weight: 500;
+}
+.main-panel {
+    flex-basis: 87%;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #F5F7FF;
+}
+ul.nav {
+    margin: 25px 15px 50px 15px;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item.active {
+    background: #FEC633;
+    width: 100%;
+    color: #efefef;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item.active .nav-link {
+    color: #fff;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item{
+    margin-top: 10px;
+}
+span.icon{
+    transition: all .1s ease-in;
+}
+.active span.icon{
+    color: #fff;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover{
+    background: #FEC633;
+    width: 100%;
+    color: #efefef; 
+    border-radius: 8px;
+}
+
+li.nav-item.active {
+    border-radius: 8px;
+}
+.sidebar .nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0.8125rem 1.937rem 0.8125rem 1rem;
+    color: #656565;
+    border-radius: 8px;
+    transition: all .1s ease-in;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover .nav-link {
+    color: #fff;
+}
+span.icon {
+    font-size: 1rem;
+    line-height: 1;
+    margin-right: 1rem;
+}
+.sidebar .nav .nav-item .nav-link .menu-title {
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover .icon {
+    color: #fff;
+}
+.right-icon{
+    display: none;
+}
+.minsidebar{
+    flex-basis: 5%;
+    height: 100vh;
+    position: sticky;
+}
+.minsidebar .icon{
+    width: 100%;
+    transition: all .3s ease-in-out;
+    display: block;
+    font-size: 25px;
+}
+.minsidebar span.menu-title {
+    display: none !important;
+}
+.minsidebar ul.nav {
+    margin: 25px 0 50px 0;
+}
+.minsidebar li.nav-item.active {
+    border-radius: 0;
+}
+.minsidebar span.icon{
+    margin: 0;
+}
+.minsidebar .nav:not(.sub-menu) > .nav-item:hover{
+    border-radius: 0px;
+}
+/* section content main */
+.content-main{
+    background: #F5F7FF;
+    padding: 2.375rem 2.375rem;
+    width: 100%;
+    flex-grow: 1;
+}
+.col-md-6.grid-margin.stretch-card img{
+    width: 100%;
+    height: 100%;
+}
+.radius{
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+}
+.chart-box{
+    width: 70%;
+    margin: auto;
+}
+.chart2{
+    padding-top: 70px;
+}
+.num{
+    font-size: 30px;
+}
+.light-blue{
+    background: #85C5E1;
+    color: #fff;
+}
+.yallow{
+    background: #FEC633;
+    color: #fff;
+}
+.dark-blue{
+    background: #5050B2;
+    color: #fff;
+}
+.red{
+    background: #f06c71;
+    color: #fff;
+}
+.card-title{
+    color: #012348;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.card .para{
+    font-size: 0.875rem;
+    margin-bottom: .5rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+.text-primary{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FEC633 !important;
+}
+/* #################################################################### */
+/* Start Login Page */
+.container-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.sec-light {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-img,  .div-img img{
+    width: 100%;
+    height: 100%;
+}
+.container.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+h1.title, h3.welcome{
+    color: #012348 ;
+    font-weight: bold;
+}
+.para-title {
+    color: #6B6B6B;
+    margin-bottom: 20px;
+}
+.label {
+    color: #a5a5a5;
+}
+.form-group.forget {
+    text-align: right;
+    color: #012348;
+}
+button.btn.btn-primary {
+    width: 100%;
+    color: #012348;
+    background: #FEC633;
+    border: none;
+}
+.foot-login{
+    transform: translate(0, 100px);
+    text-align: center;
+    color: #012348;
+}
+i.ri-heart-fill {
+    color: #FEC633;
+}
+/* Add Admin */
+.content-add-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+}
+.content-add-admin  .title {
+    text-align: center;
+}
+.content-add-admin button.btn.btn-primary {
+    margin-top: 30px;
+}
+/* Profile Page Admin */
+.content-main.main-admin {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+}
+.info-profile.content {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.info-profile.details {
+    flex-basis: 65%;
+    display: flex;
+    justify-content: center;
+}
+.info-profile.details form{
+    width: 85%;
+}
+.info-profile .div-img {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.info-profile .div-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.info-profile .name-user{
+    padding-top: 10px;
+}
+.about-me {
+    padding: 50px 0;
+    text-align: justify;
+}
+.about-me h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.about-me p {
+    padding: 10px;
+    border-radius: 5px;
+    background: #e9ecef;
+    font-size: 13px;
+}
+.btns-links {
+    margin: auto;
+}
+a.link {
+    width: 150px;
+    height: 50px;
+    background: #FEC633;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+/* edit camera */
+.my-file{
+    position: absolute;
+    bottom: 40px;
+    left: 15%;
+    outline: none;
+    color: transparent;
+    width: 100px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.my-file::-webkit-file-upload-button{
+    visibility: hidden;
+    z-index: 1;
+}
+.parent{
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #51505078;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    display: none;
+}
+span.fas.fa-camera.camera-icon {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 36%;
+    bottom: 55px;
+    display: none;
+}
+.div-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-profile .div-img:hover.overlay, .info-profile .div-img:hover span.fas.fa-camera.camera-icon{
+    display: block;
+}

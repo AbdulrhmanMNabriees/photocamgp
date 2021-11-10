@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link rel="stylesheet" href="css/all.css"><!-- link all -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- link bootstrap -->
+    <link rel="stylesheet" href="css/style.css"><!-- link style -->
+    <link rel="stylesheet" href="css/media.css"><!-- link Media-->
+    <link rel="stylesheet" href="fonts/remixicon.css"><!-- link remixicon-->
+    <title>Edit Admin Profile</title><!-- Titel -->
+</head>
+<body>
+    <!-- Start All PAge -->
+    <div class="containe-all-page">
+        <header class="header" id="header">
+            <section class="top-header" id="top-header">
+                <div class="container">
+                    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                        <div class="div-logo">
+                            <a href="#"><img src="img/logo.png" alt="Logo-Camera"></a>
+                        </div>
+                        <div class="div-item">
+                            <button class="navbar-toggler navbar-toggler align-self-center bars-icon">
+                                <span class="fas fa-bars icon-menu"></span>
+                            </button>
+                            <div class="input-group">
+                                <div class="input-group-prepend hover-cursor">
+                                    <span class="fas fa-search icon-search"></span>
+                                </div>
+                                <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+                            </div>
+                            <div class="nav-info">
+                                <img src="img/face1.jpg" alt="face1">
+                                <div class="div-ellipsis">
+                                    <span class="fas fa-chevron-down"></span>
+                                </div>
+                                <div class="profile-menu">
+                                    <div class="profile-content">
+                                        <li>
+                                            <span class="ri-user-line icon"></span>
+                                            <span class="text">Mai Elhajeen</span>
+                                        </li>
+                                        <li>
+                                            <span class="fas ri-equalizer-line icon"></span>
+                                            <span class="text">Setting</span>
+                                        </li>
+                                        <li>
+                                            <span class="fas ri-logout-circle-r-line icon"></span>
+                                            <span class="text"> Log out</span>
+                                        </li>
+                                    </div>
+                                </div>
+                                <button class="navbar-toggler navbar-toggler align-self-center right-icon">
+                                    <span class="fas fa-bars icon-menu"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section><!-- End section Headar nav -->
+        </header>
+        
+        <main class="main" id="main"> 
+            <div class="body-wrapper">
+                <nav class="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-home-heart-line"></span>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon far fa-user-circle"></span>
+                                <span class="menu-title">Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-user-line"></span>
+                                <span class="menu-title">Admin</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-group-line"></span>
+                                <span class="menu-title">Photographers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-group-line"></span>
+                                <span class="menu-title">Customers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-bar-chart-grouped-line"></span>
+                                <span class="menu-title">Chart</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-equalizer-line"></span>
+                                <span class="menu-title">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon ri-logout-circle-r-line"></span>
+                                <span class="menu-title">Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="main-panel">
+                    <div class="content-main main-admin">
+                        <div class="info-profile content">
+                            <div class="div-img">
+                                <div class="parent">
+                                    <img src="img/face1.jpg" class="img" alt="face">
+                                    <div class="overlay"></div>
+                                    <input type="file" class="my-file">
+                                    <span class="fas fa-camera camera-icon"></span>
+                                </div>
+                                <h2 class="name-user">Mai ELhajeen</h2>
+                            </div>
+                            <div class="about-me">
+                                <div class="container">
+                                    <h3>About Me</h3>
+                                    <p>
+                                        The overall goal of the educational programs and other activities covered by the Khan Yunis Training College is to enable Palestinian refugees from the age groups of 14 to 22 years in the Gaza Strip in general and in the southern region in particular, to overcome the consequences of the disengagement and the Israeli withdrawal in Social and economic fields, by providing targeted age groups with education and vocational 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btns-links">
+                                <a href="profile-admin.html" class="link">Update Profile</a>
+                            </div>
+                        </div>
+                        <div class="info-profile details">
+                            <form>
+                                <div class="form-group">
+                                  <label class="label" for="exampleInputEmail1">First Name</label>
+                                  <input type="text" class="form-control" id="exampleInputfName" placeholder="Enter New First Name" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label" for="exampleInputEmail1">Last Name</label>
+                                    <input type="text" class="form-control" id="exampleInputlname" placeholder="Enter New Last Name" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label" for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label" for="exampleInputAdress">Phone</label>
+                                    <input type="text" class="form-control" id="exampleInputPhone" placeholder="Enter Mobile Phone" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                  <label class="label" for="exampleInputDoB">Date of Birth</label>
+                                  <input type="text" class="form-control" placeholder="Enter DoB" id="exampleInputDoB">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main><!-- End section  Main Page -->
+
+    </div>
+    <!-- JS tags -->
+    <script src="js/jquery-3.5.1.min.js"></script><!-- library jQuery -->
+    <script src="js/bootstrap.bundle.min.js"></script><!-- library bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!-- library charts.js -->
+    <script src="js/function.js"></script><!-- file jQuery -->
+    <script src="js/charts.js"></script><!-- file charts -->
+</body>
+</html>

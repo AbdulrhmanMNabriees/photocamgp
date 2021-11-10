@@ -1,0 +1,199 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Start Page Dashboard */
+    .top-header .div-logo {
+        flex-basis: 20%;
+    }
+    .top-header .div-item {
+        flex-basis: 80%;
+    }
+    .top-header .input-group {
+        display: none;
+    }
+    .bars-icon {
+        display: none;
+    }
+    .nav-info .bars-icon{
+        display: block;
+    }
+    .div-ellipsis{
+        display: none;
+    }
+    /* Start Sidebar */
+    .sidebar{
+        display: none;
+        order: 2;
+    }
+    .right-icon{
+        display: block;
+    }
+    .main-panel {
+        flex-basis: 100%;
+    }
+    /* Login Page */
+    .sec-img{
+        display: none;
+    }
+    .sec-light {
+        flex-basis: 100%;
+    }
+    .container.content {
+
+        padding: 0 50px;
+    }
+    /* Profile Admin Page */
+    .content-main.main-admin{
+        flex-direction: column;
+    }
+    .btns-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btns-links a.link {
+        margin-bottom: 20px;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .top-header .div-logo {
+        flex-basis: 20%;
+    }
+    .top-header .div-item {
+        flex-basis: 80%;
+    }
+    .top-header .input-group {
+        display: none;
+    }
+    .bars-icon {
+        display: none;
+    }
+    .nav-info .bars-icon{
+        display: block;
+    }
+    .div-ellipsis{
+        display: none;
+    }
+    /* Start Sidebar */
+    .sidebar{
+        display: none;
+        order: 2;
+    }
+    .right-icon{
+        display: block;
+    }
+    .main-panel {
+        flex-basis: 100%;
+    }
+    /* Login Page */
+    .sec-img{
+        display: none;
+    }
+    .sec-light {
+        flex-basis: 100%;
+    }
+    .container.content {
+
+        padding: 0 50px;
+    }
+    /* Login Page */
+    .sec-img{
+        display: none;
+    }
+    .sec-light {
+        flex-basis: 100%;
+    }
+    .container.content {
+
+        padding: 0 50px;
+    }
+    /* Profile Admin Page */
+    .content-main.main-admin{
+        flex-direction: column;
+    }
+    .btns-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btns-links a.link {
+        margin-bottom: 20px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .top-header .div-logo {
+        flex-basis: 20%;
+    }
+    .top-header .div-item {
+        flex-basis: 80%;
+    }
+    .top-header .input-group {
+        display: none;
+    }
+    .bars-icon {
+        display: none;
+    }
+    .nav-info .bars-icon{
+        display: block;
+    }
+    .div-ellipsis{
+        display: none;
+    }
+    .main-panel {
+        flex-basis: 100%;
+    }
+    /* Start Sidebar */
+    .sidebar{
+        display: none;
+        order: 2;
+    }
+    .right-icon{
+        display: block;
+    }
+    .main-panel {
+        flex-basis: 100%;
+    }
+    /* Login Page */
+    .sec-img{
+        display: none;
+    }
+    .sec-light {
+        flex-basis: 100%;
+    }
+    .container.content {
+
+        padding: 0 50px;
+    }
+    /* Login Page */
+    .sec-img{
+        display: none;
+    }
+    .sec-light {
+        flex-basis: 100%;
+    }
+    .container.content {
+
+        padding: 0 50px;
+    }
+    /* Profile Admin Page */
+    .content-main.main-admin{
+        flex-direction: column;
+    }
+    .btns-links a.link {
+        margin-bottom: 20px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Login Page */
+    .container.content {
+        padding: 0 50px;
+    }
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+        /* Login Page */
+        .container.content {
+            padding: 0 70px;
+        }
+}
